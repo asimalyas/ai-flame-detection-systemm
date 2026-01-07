@@ -1,106 +1,86 @@
-project:
-  title: "🔥 Real-Time Flame Detection using Computer Vision"
-  subtitle: "AI-powered flame detection with smart color logic and instant alerts"
+# 🔥 Real-Time Flame Detection using Computer Vision & AI
 
-badges:
-  - "https://img.shields.io/badge/Python-3.8+-blue"
-  - "https://img.shields.io/badge/OpenCV-Computer%20Vision-green"
-  - "https://img.shields.io/badge/Status-Active-success"
-  - "https://img.shields.io/badge/License-MIT-yellow"
+<p align="center">
+  <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="350">
+</p>
 
-intro_animation:
-  gif: "https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif"
-  description: >
-    This project demonstrates real-time flame detection using a live webcam feed.
-    The system intelligently detects a lighter flame by verifying a white hot core
-    inside a yellow/orange flame body and triggers an audio alarm instantly.
+<p align="center">
+  <strong>Smart • Real-Time • Accurate Flame Detection using Computer Vision</strong>
+</p>
 
-overview:
-  description: >
-    This is a real-time flame detection system built using Python and OpenCV.
-    Instead of relying on deep learning, it uses HSV color space intelligence
-    to accurately detect small flames while reducing false positives from normal
-    lighting conditions.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-blue">
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green">
+  <img src="https://img.shields.io/badge/AI-Logic--Based-orange">
+  <img src="https://img.shields.io/badge/License-MIT-yellow">
+  <img src="https://img.shields.io/badge/Status-Active-success">
+</p>
 
-  highlights:
-    - Real-time webcam processing
-    - White core + yellow flame verification
-    - Intelligent HSV-based logic
-    - Audio alarm on detection
-    - Lightweight and fast execution
+---
 
-how_it_works:
-  animation: "https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif"
-  steps:
-    - Capture live video from webcam
-    - Apply Gaussian blur to reduce noise
-    - Convert frame from BGR to HSV color space
-    - Detect yellow/orange flame region
-    - Detect white hot core (high brightness, low saturation)
-    - Dilate yellow region to ensure connectivity
-    - Confirm flame only if white core exists inside yellow region
-    - Trigger alarm and display bounding box
+## 📌 Introduction
 
-tech_stack:
-  icons:
-    - "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-    - "https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg"
-  technologies:
-    - Python
-    - OpenCV
-    - NumPy
-    - Pygame
+This project is a **real-time flame detection system** developed using **Python and OpenCV**.  
+Unlike traditional detectors, this system uses **intelligent color and brightness logic** to detect a **lighter flame** by confirming:
 
-use_cases:
-  animation: "https://media.giphy.com/media/l0HlQ7LRalYnxjvMs/giphy.gif"
-  applications:
-    - Fire safety and early warning systems
-    - Smart surveillance solutions
-    - Industrial monitoring
-    - AI automation projects
-    - Educational computer vision demos
+- 🔥 A **white hot core**
+- 🟡 Surrounded by a **yellow/orange flame body**
 
-installation:
-  steps:
-    - "Clone the repository from GitHub"
-    - "Install dependencies using pip"
-    - "Run the Python script to start detection"
+This dual-condition logic helps **avoid false detections** from normal lights or reflections.  
+Once a flame is detected, an **audio alarm is triggered instantly** 🚨.
 
-  commands:
-    clone: "git clone https://github.com/your-username/real-time-flame-detection-opencv.git"
-    install: "pip install opencv-python numpy pygame"
-    run: "python flame_detection.py"
+---
 
-requirements:
-  - Python 3.8 or higher
-  - Webcam
-  - Speakers or headphones for alarm
+## 🎥 Real-Time Detection (Concept Animation)
 
-limitations:
-  - Optimized for small flames (lighter-scale)
-  - HSV thresholds may require tuning per environment
-  - Not designed for large wildfire detection
+<p align="center">
+  <img src="https://media.giphy.com/media/l0HlQ7LRalYnxjvMs/giphy.gif" width="520">
+</p>
 
-future_scope:
-  animation: "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif"
-  improvements:
-    - Deep Learning integration (YOLO / CNN)
-    - Smoke detection support
-    - Mobile camera compatibility
-    - IoT-based fire alert system
-    - Cloud notifications
+---
 
-author:
-  name: "Muhammad Asim"
-  role: "Software Engineer | AI & Computer Vision Developer"
-  contact:
-    instagram: "DM 'LINK' on Instagram for source code"
-    github: "More AI projects coming soon"
+## 🚀 Features
 
-license:
-  type: "MIT License"
-  note: "Free to use, modify, and distribute"
+- ✅ Real-time webcam-based flame detection  
+- ✅ HSV color space analysis  
+- ✅ White core + yellow flame verification  
+- ✅ Reduced false positives  
+- ✅ Instant audio alert  
+- ✅ Bounding box visualization  
+- ✅ Lightweight & fast performance  
 
-footer:
-  animation: "https://media.giphy.com/media/xUPGcguWZHRC2HyBRS/giphy.gif"
-  message: "⭐ If you like this project, please star the repository. Your support matters!"
+---
+
+## 🧠 Detection Logic Explained
+
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="480">
+</p>
+
+### 🔍 Step-by-Step Workflow
+
+1. Capture live frames from the webcam  
+2. Apply Gaussian Blur to reduce noise  
+3. Convert image from BGR to HSV color space  
+4. Detect yellow/orange flame regions  
+5. Detect white hot core (high brightness, low saturation)  
+6. Dilate flame region for connectivity  
+7. Confirm flame only if white core exists inside flame body  
+8. Trigger alarm and draw bounding box  
+
+---
+
+## 🛠️ Technologies Used
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg" width="60">
+</p>
+
+- Python  
+- OpenCV  
+- NumPy  
+- Pygame  
+
+---
+
